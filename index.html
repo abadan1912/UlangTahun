@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Spesial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('BG1.jpg') no-repeat center center/cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 400px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        #text {
+            font-size: 18px;
+            color: #d4d4d4;
+            min-height: 50px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted id="background-video">
+        <source src="" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+    </video>
+    
+    <div class="container">
+        <img src="bg.JPG" alt="Foto Saya" class="profile-img">
+        <div id="text"></div>
+        <button class="btn" onclick="playMusic()">Di dulu Play Music nya sayang 🎤🎶</button>   
+    </div>
+    
+    <audio id="audio" src="lagu.mp3"></audio>
+
+    
+    
+    <script src="main.js"> </script>
+</body>
+</html>
